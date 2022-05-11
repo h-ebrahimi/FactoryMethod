@@ -6,7 +6,11 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter your salary :");
+            var salary = Convert.ToDouble(Console.ReadLine());
+
+            var myCard = Factory.GetCard(salary);
+            Console.WriteLine(myCard);
         }
     }
 }
